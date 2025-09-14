@@ -3,7 +3,7 @@ import React from 'react';
 export default function DishCard({ dish, isSelected, onToggle, onViewIngredients }) {
   return (
     <div className="dish-card" style={{ border: isSelected ? '2px solid #1f6feb' : undefined }}>
-      <img className="dish-image" src={dish.image} alt={dish.name} />
+      
       <div className="dish-name">{dish.name}</div>
       <div className="dish-meta">{dish.description}</div>
       <div style={{ display:'flex', gap:8, alignItems:'center' }}>
