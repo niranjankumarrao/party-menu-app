@@ -3,9 +3,15 @@ import React from 'react';
 export default function DishCard({ dish, isSelected, onToggle, onViewIngredients }) {
   return (
     <div className="dish-card" style={{ border: isSelected ? '2px solid #1f6feb' : undefined }}>
-      
-      <div className="dish-name">{dish.name}</div>
-      <div className="dish-meta">{dish.description}</div>
+      <div>
+        <div>
+          <div className="dish-name">{dish.name}</div>
+          <div className="dish-meta">{dish.description}</div>
+        </div>
+       <div>
+          <img className="dish-image" src={dish.image} alt={dish.name} />
+       </div>
+      </div>
       <div style={{ display:'flex', gap:8, alignItems:'center' }}>
         <div className="dish-meta">{dish.type}</div>
         {isSelected && <div className="selected-badge">Selected</div>}
