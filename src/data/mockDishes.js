@@ -7,13 +7,7 @@ export const dishes = [
     mealType: "MAIN COURSE",
     type: "VEG",
     dishType: "CURRY",
-    category: {
-      id: 1,
-      name: "North Indian",
-      image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
-      isRecommendedForMealSuggestion: true
-    }
-    "ingredients": [
+    ingredients: [
         { "name": "Paneer", "quantity": "200g" },
         { "name": "Onion", "quantity": "2 large" },
         { "name": "Capsicum", "quantity": "1 large" },
